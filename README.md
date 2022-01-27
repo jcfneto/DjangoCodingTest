@@ -28,8 +28,8 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-- Python >= 3.8
-- Pip >= 21.1.1
+- Docker >= 20.10.9
+- Docker-compose >= 1.29.2
 
 ### Installation
 
@@ -40,17 +40,7 @@ git clone https://github.com/jcfneto/igs-software-manager.git
 
 2. Enter in `igs-software-manager` folder and install the requirements
 ```
-pip install -r requirements.txt
-```
-
-3. Create the SQLite DB and tables 
-```
-python manage.py migrate
-```
-
-4. Run the application
-```
-python manage.py runserver
+docker-compose up -d
 ```
 
 ### Create super user
@@ -58,7 +48,7 @@ python manage.py runserver
 To create a super user, use the command:
 
 ```
-python manage.py createsuperuser
+docker exec -it igssm_web_run_1 sh -c "python manage.py createsuperuser"
 ```
 
 ### Create authorization token

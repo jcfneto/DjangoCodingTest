@@ -2,13 +2,13 @@ from django.contrib import admin
 from django.urls import path, include
 
 from core.urls import router
-from core.views import index_view
+
 
 urlpatterns = [
-    path('', index_view, name='index'),
-    path('', include(router.urls)),
     path('admin/', admin.site.urls),
-    path('auth/', include('rest_framework.urls'))
+    path('auth/', include('rest_framework.urls')),
+    path('user/', include('user.urls')),
+    path('', include(router.urls))
 ]
 
 admin.site.site_header = 'IGS - Employee Software Manager'

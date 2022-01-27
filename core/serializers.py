@@ -1,6 +1,18 @@
 from rest_framework import serializers
 
-from .models import Employee
+from .models import Department, Employee
+
+
+class DepartmentSerializer(serializers.ModelSerializer):
+
+    class Meta:
+
+        model = Department
+        fields = (
+            'id',
+            'name',
+            'created_at'
+        )
 
 
 class EmployeeSerializer(serializers.ModelSerializer):

@@ -48,7 +48,7 @@ docker-compose up -d
 To create a super user, use the command:
 
 ```
-docker exec -it igssm_web_run_1 sh -c "python manage.py createsuperuser"
+docker exec -it igs-software-manager-main_web_run_1 sh -c "python manage.py createsuperuser"
 ```
 
 ### Create authorization token

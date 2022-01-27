@@ -66,6 +66,15 @@ just access the admin. As per the image below.
 
 With the `department/` endpoint it is allowed to make all requests (`GET`, `POST`, `PUT`, `DELETE`).
 
+Payload example:
+
+```
+{
+	"name": "Marketing",
+	"created_at": "2021-03-01"
+}
+```
+
 Example:
 
 `POST` at `department/`
@@ -89,6 +98,19 @@ Example:
 
 The `employee/` endpoint allows the following requests: `GET`, `POST`, `DELETE`.
 
+Payload example:
+
+```
+{
+      "name": "Maria",
+      "email": "maria@igs-software.com.br",
+      "department": "1",
+      "birth_date": "1995-02-27",
+      "salary": "10000",
+      "first_day": "2022-02-01"
+}
+```
+
 Examples:
 
 `POST` at `employee/`
@@ -107,6 +129,17 @@ Examples:
 
 With the `user/register/` endpoint it is only allowed to add a new user, that is, 
 only `POST` is allowed.
+
+Payload example:
+
+```
+{
+   "email": "jose_carlos@igs-software.com.br",
+   "full_name": "José Carlos",
+   "password": "senhaForte",
+   "password_confirm": "senhaForte"
+}
+```
 
 Example:
 

@@ -102,12 +102,12 @@ Payload example:
 
 ```
 {
-      "name": "Maria",
-      "email": "maria@igs-software.com.br",
-      "department": "1",
-      "birth_date": "1995-02-27",
-      "salary": "10000",
-      "first_day": "2022-02-01"
+	"name": "Maria",
+	"email": "maria@igs-software.com.br",
+	"department": "1",
+	"birth_date": "1995-02-27",
+	"salary": "10000",
+	"first_day": "2022-02-01"
 }
 ```
 
@@ -134,10 +134,10 @@ Payload example:
 
 ```
 {
-   "email": "jose_carlos@igs-software.com.br",
-   "full_name": "José Carlos",
-   "password": "senhaForte",
-   "password_confirm": "senhaForte"
+	"email": "jose_carlos@igs-software.com.br",
+	"full_name": "José Carlos",
+	"password": "senhaForte",
+	"password_confirm": "senhaForte"
 }
 ```
 

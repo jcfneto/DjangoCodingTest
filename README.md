@@ -1,4 +1,4 @@
-## rh-Software Manger
+## RH Software Manager
 
 Build with:
 

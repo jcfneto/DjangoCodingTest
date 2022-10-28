@@ -1,4 +1,4 @@
-## IGS-Software Manger
+## rh-Software Manger
 
 Build with:
 
